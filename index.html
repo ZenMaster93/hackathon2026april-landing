@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZenHire AI Coding Hackathon — Gamified Hiring</title>
+  <meta name="description" content="48-časovni AI coding hakaton za gamifikovane assessmente — gradi igru koja meri kognitivne sposobnosti i otkriva talenat. 25—26. april 2026, CDT Hub, Beograd." />
+  <meta property="og:title" content="ZenHire AI Coding Hackathon" />
+  <meta property="og:description" content="Gamifikovani assessmenti. Građeni u 48 sati." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAV
+       ============================================ -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo" aria-label="ZenHire">
+        <img src="assets/zenhire-logo.svg" alt="ZenHire" class="logo-img" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#igre">Igre</a></li>
+        <li><a href="#izazov">Izazov</a></li>
+        <li><a href="#nagrade">Nagrade</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <a href="https://app.zenhire.ai/position/69de0a4cd0af41fa636ef840/simulation/apply" class="btn btn-primary" target="_blank" rel="noopener">
+        Prijavi se <span class="arrow">→</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="floater f1"></div>
+      <div class="floater f2"></div>
+      <div class="floater f3"></div>
+      <div class="floater f4"></div>
+      <div class="floater f5"></div>
+
+      <div class="hero-grid">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#2E9D7E" stop-opacity="0"/>
+              <stop offset="70%" stop-color="#2E9D7E" stop-opacity="0.12"/>
+              <stop offset="100%" stop-color="#2E9D7E" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <g fill="none" stroke="#2E9D7E" stroke-width="0.4" opacity="0.35">
+            <circle cx="200" cy="200" r="60"/>
+            <circle cx="200" cy="200" r="100"/>
+            <circle cx="200" cy="200" r="140"/>
+            <circle cx="200" cy="200" r="180"/>
+          </g>
+          <circle cx="200" cy="200" r="180" fill="url(#rg)"/>
+          <g fill="#2E9D7E" opacity="0.7">
+            <circle cx="200" cy="40"  r="3"/>
+            <circle cx="340" cy="130" r="3"/>
+            <circle cx="340" cy="270" r="3"/>
+            <circle cx="200" cy="360" r="3"/>
+            <circle cx="60"  cy="270" r="3"/>
+            <circle cx="60"  cy="130" r="3"/>
+          </g>
+          <g fill="#D8AF51" opacity="0.6">
+            <circle cx="270" cy="100" r="2.5"/>
+            <circle cx="100" cy="290" r="2.5"/>
+            <circle cx="300" cy="300" r="2.5"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="container hero-inner">
+      <span class="eyebrow"><span class="dot"></span>ZenHire AI Coding Hackathon · 25—26. april 2026</span>
+
+      <h1>
+        Ostvari svoj talenat.<br>
+        Izgradi <em>Hiring Igricu.</em>
+      </h1>
+
+      <p class="hero-sub">
+        48-časovni hakaton za <strong style="color:var(--ink-900); font-weight:500;">gamifikovane assessmente</strong> — dizajniraj igru koja meri kognitivne sposobnosti i skillove, i pomaže kompanijama da nađu prave kandidate. AI coding i psihometrija, uživo u Beogradu.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://app.zenhire.ai/position/69de0a4cd0af41fa636ef840/simulation/apply" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          Prijavi se <span class="arrow">→</span>
+        </a>
+        <a href="#igre" class="btn btn-ghost btn-lg">Vidi primere igara</a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <div class="label">Kada</div>
+          <div class="value">25—26. april 2026</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="label">Gde</div>
+          <div class="value">
+            <a href="https://maps.google.com/?q=CDT+Hub+Kneza+Milosa+12+Beograd" target="_blank" rel="noopener" style="color:var(--ink-900); border-bottom:1px solid var(--mint-300, #A8D6C2); padding-bottom:1px;">CDT Hub, Kneza Miloša 12</a>
+          </div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="label">Tim</div>
+          <div class="value">1—3 ljudi</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="label">Rok prijave</div>
+          <div class="value">četvrtak, 23. april · 14:00h</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       IGRE / INSPIRATION — moved up to be 2nd
+       ============================================ -->
+  <section class="section games" id="igre">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Inspiracija</span>
+        <h2 class="section-title">Šta možeš da <em>gradiš</em></h2>
+        <p class="section-lead">
+          Od Lumosity-style mini-igara do custom assessmenata. Evo nekoliko pravaca —
+          svaki meri drugu kognitivnu dimenziju ili skill. Pick one. Ili smisli nešto sasvim novo.
+        </p>
+      </div>
+
+      <div class="games-grid">
+
+        <article class="game-card reveal">
+          <div class="game-stage stage-attention">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="game-meta">
+            <div class="game-tag">Kognitivno</div>
+            <h3>Pažnja</h3>
+            <p>Prepoznaj signal u buci. Meri selektivnu pažnju i koncentraciju.</p>
+          </div>
+        </article>
+
+        <article class="game-card reveal">
+          <div class="game-stage stage-reaction">
+            <div class="pulse-ring"></div>
+          </div>
+          <div class="game-meta">
+            <div class="game-tag">Kognitivno</div>
+            <h3>Brzina reakcije</h3>
+            <p>Klikni kad je vreme. Meri vreme odgovora i impulse control.</p>
+          </div>
+        </article>
+
+        <article class="game-card reveal">
+          <div class="game-stage stage-memory">
+            <div class="mcard"></div>
+            <div class="mcard"></div>
+            <div class="mcard"></div>
+            <div class="mcard"></div>
+            <div class="mcard"></div>
+            <div class="mcard"></div>
+            <div class="mcard"></div>
+            <div class="mcard"></div>
+          </div>
+          <div class="game-meta">
+            <div class="game-tag">Kognitivno</div>
+            <h3>Radna memorija</h3>
+            <p>Zapamti, zadrži, upotrebi. Kapacitet radne memorije kroz sekvence.</p>
+          </div>
+        </article>
+
+        <article class="game-card reveal">
+          <div class="game-stage stage-numbers">
+            <span class="nfall n1">7 + 4</span>
+            <span class="nfall n2">× 3</span>
+            <span class="nfall n3">12 − 5</span>
+            <span class="nfall n4">÷ 2</span>
+            <span class="nfall n5">9 + 8</span>
+          </div>
+          <div class="game-meta">
+            <div class="game-tag">Skill</div>
+            <h3>Numerička obrada</h3>
+            <p>Brojevi padaju, ti računaš. Brzina mentalne aritmetike pod pritiskom.</p>
+          </div>
+        </article>
+
+        <article class="game-card reveal">
+          <div class="game-stage stage-multitask">
+            <div class="track"><span class="token"></span></div>
+            <div class="track"><span class="token"></span></div>
+            <div class="track"><span class="token"></span></div>
+          </div>
+          <div class="game-meta">
+            <div class="game-tag">Kognitivno</div>
+            <h3>Multitasking</h3>
+            <p>Train of thought stil — više paralelnih tokova, jedna odluka po tiku.</p>
+          </div>
+        </article>
+
+        <article class="game-card reveal">
+          <div class="game-stage stage-pattern">
+            <div class="shape"></div>
+          </div>
+          <div class="game-meta">
+            <div class="game-tag">Kognitivno</div>
+            <h3>Prepoznavanje obrazaca</h3>
+            <p>IQ-style logika. Nađi pravilo, predvidi sledeći korak.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       IZAZOV
+       ============================================ -->
+  <section class="section challenge" id="izazov">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Izazov</span>
+        <h2 class="section-title">Dizajniraj test koji <em>meri</em>.<br>Ne test koji umara.</h2>
+        <p class="section-lead">
+          Tvoj zadatak — razviti gamifikovani assessment koji pouzdano meri jednu jasno definisanu dimenziju:
+          kognitivnu sposobnost, konkretan skill, ili znanje programskog jezika. Kroz igru.
+          Sa automatskim scoringom. Za 48 sati.
+        </p>
+      </div>
+
+      <div class="rule-grid">
+        <div class="rule reveal">
+          <div class="rule-num">i.</div>
+          <h3>Jedna dimenzija</h3>
+          <p>Jedan jasno definisan aspekt koji meriš — pažnja, memorija, Excel, JavaScript. Bez miksovanja.</p>
+        </div>
+        <div class="rule reveal">
+          <div class="rule-num">ii.</div>
+          <h3>Clean merenje</h3>
+          <p>Test mora da meri tačno ono što tvrdi. Validnost pre svega — psihometrija nije folklor.</p>
+        </div>
+        <div class="rule reveal">
+          <div class="rule-num">iii.</div>
+          <h3>Game-like iskustvo</h3>
+          <p>Engaging, intuitivno, zarazno. Flow, feedback, jasan progress — kao prava igra, ne forma.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WHY
+       ============================================ -->
+  <section class="why">
+    <div class="container">
+      <p class="why-quote reveal">
+        Tradicionalni testovi umaraju. Intervjui su subjektivni.
+        <span>Mi verujemo da se pravi talenat otkriva kroz igru.</span>
+        I ti ćeš graditi tu budućnost.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       NAGRADE
+       ============================================ -->
+  <section class="section" id="nagrade">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Nagrade</span>
+        <h2 class="section-title">Više od <em>novca</em></h2>
+        <p class="section-lead">
+          Cash je start. Pravu vrednost donose ljudi i prilike koje otključavaš —
+          mentorship sa CEO-om, fast-track do full-time uloge, LinkedIn preporuke koje stvarno znače.
+        </p>
+      </div>
+
+      <div class="prizes-grid">
+
+        <div class="prize reveal">
+          <div class="prize-rank">ii</div>
+          <div class="prize-amount"><span class="currency">$</span>300</div>
+          <h3>Drugo mesto</h3>
+          <ul class="prize-list">
+            <li>Internship pozicija u ZenHire</li>
+            <li>LinkedIn preporuka od CEO-a</li>
+            <li>Fast-track do full-time uloge</li>
+            <li>ZenHire merch paket</li>
+          </ul>
+        </div>
+
+        <div class="prize prize-first reveal">
+          <span class="prize-badge">Winner</span>
+          <div class="prize-rank">i</div>
+          <div class="prize-amount"><span class="currency">$</span>500</div>
+          <h3>Prvo mesto</h3>
+          <ul class="prize-list">
+            <li>Internship pozicija u ZenHire</li>
+            <li>1-on-1 mentorship sa <a href="https://www.linkedin.com/in/vladimirbozovic/" target="_blank" rel="noopener" style="color:var(--mint-700); text-decoration:underline; text-decoration-color:var(--mint-200); text-underline-offset:3px;">Vladimirom Božovićem</a> (CEO)</li>
+            <li>LinkedIn preporuka od CEO-a</li>
+            <li>Fast-track do full-time uloge</li>
+            <li>Feature na ZenHire blogu i social kanalima</li>
+            <li>ZenHire merch paket</li>
+          </ul>
+        </div>
+
+        <div class="prize reveal">
+          <div class="prize-rank">iii</div>
+          <div class="prize-amount"><span class="currency">$</span>200</div>
+          <h3>Treće mesto</h3>
+          <ul class="prize-list">
+            <li>Fast-track do full-time uloge</li>
+            <li>Priority interview kanal</li>
+            <li>ZenHire merch paket</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ZA KOGA
+       ============================================ -->
+  <section class="section audience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Za koga</span>
+        <h2 class="section-title">Ako umeš da <em>gradiš</em> sa AI-em — zovemo te</h2>
+        <p class="section-lead">
+          Ne tražimo samo inženjere. Tražimo ljude koji razumeju problem, ljude, i znaju
+          da od prompta naprave proizvod.
+        </p>
+      </div>
+
+      <div class="aud-grid">
+        <div class="aud-card reveal">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h4>Inženjeri</h4>
+          <p>Frontend, backend, full-stack. Ili jednostavno neko ko zna da "dovrši" AI-em.</p>
+        </div>
+        <div class="aud-card reveal">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="12" y1="2" x2="12" y2="4"></line><line x1="12" y1="20" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="6.34" y2="6.34"></line></svg>
+          </div>
+          <h4>Dizajneri</h4>
+          <p>UX, UI, motion. Tvoj posao — napraviti da se igra poželi igrati.</p>
+        </div>
+        <div class="aud-card reveal">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <h4>Product & strategija</h4>
+          <p>Ko meri šta, i zašto. Validnost, scoring, fit u realni HR proces.</p>
+        </div>
+        <div class="aud-card reveal">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <h4>Psiholozi</h4>
+          <p>Bez vas — nema validnog merenja. Mapirate dimenzije, signal, psihometriju.</p>
+        </div>
+      </div>
+
+      <div class="aud-universities reveal">
+        <div class="label">Posebno zovemo studente završnih godina</div>
+        <div class="unis">
+          <span class="uni">FON</span>
+          <span class="uni">ETF</span>
+          <span class="uni">Filozofski — Psihologija</span>
+          <span class="uni">Ekonomski</span>
+          <span class="uni">Matematički</span>
+          <span class="uni">+ bilo koji smer koji "klikne"</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       AGENDA
+       ============================================ -->
+  <section class="section" id="agenda">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Agenda</span>
+        <h2 class="section-title">Dva dana. <em>Fleksibilno.</em></h2>
+        <p class="section-lead">
+          Ovo je ritam koji preporučujemo — ali ti biraš svoj tempo.
+          Ostani duže, uzmi više pauze. Hakaton je tvoj, ne naš.
+        </p>
+      </div>
+
+      <div class="agenda-wrap">
+
+        <div class="day reveal">
+          <div class="day-head">
+            <h3>Dan <em>prvi</em></h3>
+            <span class="date">Subota · 25. april</span>
+          </div>
+          <ul class="timeline">
+            <li><span class="t">10:30</span><div class="e"><strong>Registracija & kafa</strong><span>Check-in, networking, tehnička provera.</span></div></li>
+            <li class="highlight"><span class="t">11:30</span><div class="e"><strong>Otvaranje</strong><span>Dobrodošlica + uvodna reč (ZenHire CEO).</span></div></li>
+            <li><span class="t">11:50</span><div class="e"><strong>Psihometrijski uvod</strong><span>Šta znači "clean" test. Zašto je validnost kralj.</span></div></li>
+            <li><span class="t">12:05</span><div class="e"><strong>Objašnjenje zadatka</strong><span>Pravila, deliverables, kriterijumi ocenjivanja.</span></div></li>
+            <li><span class="t">12:20</span><div class="e"><strong>Formiranje timova</strong><span>1—3 ljudi. Icebreaker. Dodela zadataka.</span></div></li>
+            <li class="highlight"><span class="t">12:50</span><div class="e"><strong>Rad — blok 1</strong><span>Prvi coding blok. Mentori dostupni.</span></div></li>
+            <li><span class="t">15:00</span><div class="e"><strong>Pauza za ručak</strong><span>U sopstvenoj organizaciji — okolo ima dosta opcija.</span></div></li>
+            <li class="highlight"><span class="t">16:00</span><div class="e"><strong>Rad — blok 2</strong><span>Fokus: funkcionalni prototip.</span></div></li>
+            <li><span class="t">18:30</span><div class="e"><strong>Checkpoint s mentorima</strong><span>Validnost, dimenzija, feedback pre noći.</span></div></li>
+            <li><span class="t">19:30</span><div class="e"><strong>Kraj prvog dana</strong><span>Ili nastaviš remote — tvoj izbor.</span></div></li>
+          </ul>
+        </div>
+
+        <div class="day reveal">
+          <div class="day-head">
+            <h3>Dan <em>drugi</em></h3>
+            <span class="date">Nedelja · 26. april</span>
+          </div>
+          <ul class="timeline">
+            <li><span class="t">10:30</span><div class="e"><strong>Okupljanje & lagani start</strong><span>Kafa, dorada, priprema za finale.</span></div></li>
+            <li class="highlight"><span class="t">11:00</span><div class="e"><strong>Rad — finalizacija</strong><span>UX polish, scoring logika, pitch prep.</span></div></li>
+            <li><span class="t">13:30</span><div class="e"><strong>Pauza za ručak</strong><span>U sopstvenoj organizaciji.</span></div></li>
+            <li><span class="t">14:30</span><div class="e"><strong>Submit projekata</strong><span>Link, demo, kratak opis (šta meri, kako, scoring).</span></div></li>
+            <li class="highlight"><span class="t">15:00</span><div class="e"><strong>Pitch prezentacije</strong><span>3—5 min po timu + Q&A sa žirijem.</span></div></li>
+            <li><span class="t">17:00</span><div class="e"><strong>Odluka žirija</strong><span>Sabiranje bodova, finalna diskusija.</span></div></li>
+            <li class="highlight"><span class="t">17:30</span><div class="e"><strong>Proglašenje pobednika</strong><span>Dodela nagrada + fotografisanje.</span></div></li>
+            <li><span class="t">19:00</span><div class="e"><strong>Kraj</strong><span>Fleksibilno — ostani za drink ako hoćeš.</span></div></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SCORING
+       ============================================ -->
+  <section class="section scoring">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Kako se ocenjuje</span>
+        <h2 class="section-title">Transparentan <em>scoring</em></h2>
+        <p class="section-lead">
+          Šest kriterijuma. Ponderisani. Bez iznenađenja — znaš tačno šta žiri gleda.
+        </p>
+      </div>
+
+      <div class="scoring-grid">
+        <div class="score-list">
+          <div class="score-row" style="--w: 25%">
+            <div class="score-name">Kvalitet merenja</div>
+            <div class="score-bar"><div class="fill"></div></div>
+            <div class="score-pct">25%</div>
+          </div>
+          <div class="score-row" style="--w: 20%">
+            <div class="score-name">Gamification</div>
+            <div class="score-bar"><div class="fill"></div></div>
+            <div class="score-pct">20%</div>
+          </div>
+          <div class="score-row" style="--w: 20%">
+            <div class="score-name">Tehnička izvedba</div>
+            <div class="score-bar"><div class="fill"></div></div>
+            <div class="score-pct">20%</div>
+          </div>
+          <div class="score-row" style="--w: 15%">
+            <div class="score-name">UX / dizajn</div>
+            <div class="score-bar"><div class="fill"></div></div>
+            <div class="score-pct">15%</div>
+          </div>
+          <div class="score-row" style="--w: 10%">
+            <div class="score-name">Inovativnost</div>
+            <div class="score-bar"><div class="fill"></div></div>
+            <div class="score-pct">10%</div>
+          </div>
+          <div class="score-row" style="--w: 10%">
+            <div class="score-name">Pitch prezentacija</div>
+            <div class="score-bar"><div class="fill"></div></div>
+            <div class="score-pct">10%</div>
+          </div>
+        </div>
+
+        <div class="scoring-note reveal">
+          <h4>Zašto ovaj raspored</h4>
+          <p>
+            <strong>Kvalitet merenja</strong> nosi najviše — jer je srž svakog assessmenta. Test koji meri pogrešnu stvar je uvek loš test.
+          </p>
+          <p>
+            <strong>Gamification</strong> i <strong>tehnička izvedba</strong> su sledeće — bez engagement-a, bez prototipa, ideja ostaje slajd.
+          </p>
+          <p>
+            <strong>UX</strong>, <strong>inovativnost</strong> i <strong>pitch</strong> dodaju polish. Razlika između dobrog i pobedničkog rešenja.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FAQ
+       ============================================ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center;">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section-title">Česta <em>pitanja</em></h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q">Koliko košta učešće?<span class="toggle"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">
+            Ništa. Hakaton je besplatan — uključujući ručkove, snackove i kafu oba dana.
+          </div></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">Moram li da imam tim, ili mogu sam?<span class="toggle"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">
+            Možeš solo ili u timu od 1—3 ljudi. Prijavljuješ se samostalno, a ako nemaš tim —
+            pomoći ćemo ti da ga formiraš na dan jedan.
+          </div></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">Koje AI alate mogu da koristim?<span class="toggle"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">
+            Preporučena platforma je Lovable, ali možeš da koristiš bilo koji AI-coding alat u kojem si produktivan.
+            Ograničenje: bez tuđeg koda, eksternih vizuala, muzike — sve što se gradi, gradi se tu.
+          </div></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">Treba li prethodno iskustvo?<span class="toggle"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">
+            Ne. Treba ti želja da gradiš, osnovno razumevanje problema, i volja da učiš od mentora.
+            Timovi se balansiraju po skillovima — inženjer + dizajner + psiholog ≫ tri programera.
+          </div></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">Gde se tačno održava?<span class="toggle"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">
+            <a href="https://maps.google.com/?q=CDT+Hub+Kneza+Milosa+12+Beograd" target="_blank" rel="noopener" style="color:var(--mint-700); text-decoration:underline;">CDT Hub</a>, Kneza Miloša 12, Beograd. Centralna lokacija, 5 minuta od Slavije.
+          </div></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">Ko je vlasnik koda koji napravim?<span class="toggle"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">
+            Ti. ZenHire zadržava pravo korišćenja, daljeg razvoja, testiranja i modifikacije —
+            ali IP ostaje tvoj. Detalji u pravilima koje potpisuješ pri prijavi.
+          </div></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">Šta tačno nosim sa sobom?<span class="toggle"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">
+            Laptop, punjač, i dobro raspoloženje. Ostalo — WiFi, hrana, prostor, mentori —
+            mi obezbeđujemo.
+          </div></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">Do kada mogu da se prijavim?<span class="toggle"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">
+            Do četvrtka, 23. aprila, u 14:00h. Nakon toga — selekcioni test, pa konačna potvrda učešća.
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FINAL CTA
+       ============================================ -->
+  <section class="cta-final">
+    <div class="container cta-final-inner">
+      <h2 class="reveal">
+        Spreman?<br>
+        <em>48 sati te čekaju.</em>
+      </h2>
+      <p class="reveal">Prijave otvorene do četvrtka, 23. aprila, 14:00h.</p>
+      <a href="https://app.zenhire.ai/position/69de0a4cd0af41fa636ef840/simulation/apply" class="btn btn-primary btn-lg reveal" target="_blank" rel="noopener">
+        Prijavi se sada <span class="arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer>
+    <div class="container footer-inner">
+      <a href="#" class="logo" aria-label="ZenHire">
+        <img src="assets/zenhire-logo.svg" alt="ZenHire" class="logo-img sm" />
+      </a>
+
+      <ul class="footer-links">
+        <li><a href="#igre">Igre</a></li>
+        <li><a href="#nagrade">Nagrade</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="https://maps.google.com/?q=CDT+Hub+Kneza+Milosa+12+Beograd" target="_blank" rel="noopener">CDT Hub</a></li>
+        <li><a href="https://zenhire.ai" target="_blank" rel="noopener">zenhire.ai</a></li>
+      </ul>
+
+      <div class="footer-copy">© 2026 ZenHire · Beograd</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
