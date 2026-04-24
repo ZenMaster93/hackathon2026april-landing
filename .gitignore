@@ -26,3 +26,6 @@ build/
 
 # Claude Code local
 .claude/
+
+# Scratch / one-off scripts
+_*.py
